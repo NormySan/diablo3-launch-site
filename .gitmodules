@@ -1,0 +1,3 @@
+[submodule "sites/all/themes"]
+	path = sites/all/themes
+	url = git@oddhill.beanstalkapp.com:/oddhill/oddbaby.git
