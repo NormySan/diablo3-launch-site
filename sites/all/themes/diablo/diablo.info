@@ -12,4 +12,5 @@ scripts[] = js/main.js
 ; Regions.
 regions[header] = Header
 regions[content] = Content
+regions[sidebar_right] = Right Sidebar
 regions[footer] = Footer
