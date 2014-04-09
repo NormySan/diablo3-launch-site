@@ -1,53 +1,5 @@
-@import "bourbon";
+//@import "../assets/bourbon/dist/bourbon";
 
 @import "reset", "variables", "mixins";
 
-// Import grid asset
-//@import '../assets/neat/_neat';
-
-body,
-caption,
-th,
-td,
-input,
-textarea,
-select,
-option,
-legend,
-fieldset {
-  font-family: Arial, Helvetica, "Nimbus Sans L", sans-serif;
-  font-size: $base-font-size;
-  line-height: $line-height;
-}
-
-pre,
-code,
-kbd,
-samp,
-tt,
-var {
-  font-family: "Courier New", "DejaVu Sans Mono", monospace;
-}
-
-h1 {
-  font-size: $base-font-size * 2;
-  line-height: $base-font-size * 3;
-}
-
-h2 {
-  font-size: $base-font-size * 1.5;
-}
-
-h3 {
-  font-size: $base-font-size * 1.3;
-}
-
-h4,
-h5,
-h6 {
-  font-size: $base-font-size;
-}
-
-pre {
-  font-size: $base-font-size: + 1; // Monospace skrivs ut något mindre
-}
+//@import "../assets/neat/neat";
