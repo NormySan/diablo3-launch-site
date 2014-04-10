@@ -1,5 +1,11 @@
-//@import "../assets/bourbon/dist/bourbon";
+/**
+ * Import external libraries.
+ */
+@import "bourbon";
+@import "neat";
 
+/**
+ * Import sass files.
+ */
 @import "reset", "variables", "mixins";
 
-//@import "../assets/neat/neat";

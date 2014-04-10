@@ -1,0 +1,24 @@
+{
+  "name": "diablo",
+  "version": "0.0.0",
+  "authors": [
+    "Christoffer Palm <christoffer.palm@oddhill.se>"
+  ],
+  "description": "Diablo theme for drupal 7.x.",
+  "keywords": [
+    "diablo"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "bourbon": "*",
+    "neat": "*"
+  }
+}
