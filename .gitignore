@@ -15,3 +15,7 @@ icon.gif
 icon.jpg
 .DS_Store
 .sass-cache
+
+# Do not include node modules.
+/sites/all/themes/*/node_modules
+/sites/all/themes/*/bower_components
