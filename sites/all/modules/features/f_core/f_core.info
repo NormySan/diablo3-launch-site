@@ -1,0 +1,16 @@
+name = f_core
+description = Shared features
+core = 7.x
+package = Features
+version = 7.x-0.1
+project = f_core
+dependencies[] = features
+dependencies[] = node_reference
+dependencies[] = taxonomy
+dependencies[] = text
+features[features_api][] = api:2
+features[field_base][] = body
+features[field_base][] = field_shared_node_reference
+features[field_base][] = field_shared_tags
+features[taxonomy][] = tags
+project path = sites/all/modules/features
