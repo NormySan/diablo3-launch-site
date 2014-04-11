@@ -20,10 +20,10 @@ function f_frontpage_feeds_importer_default() {
     'fetcher' => array(
       'plugin_key' => 'FeedsHTTPFetcher',
       'config' => array(
-        'auto_detect_feeds' => 1,
-        'use_pubsubhubbub' => 0,
+        'auto_detect_feeds' => FALSE,
+        'use_pubsubhubbub' => FALSE,
         'designated_hub' => '',
-        'request_timeout' => '',
+        'request_timeout' => NULL,
       ),
     ),
     'parser' => array(
@@ -33,25 +33,19 @@ function f_frontpage_feeds_importer_default() {
     'processor' => array(
       'plugin_key' => 'FeedsNodeProcessor',
       'config' => array(
-        'expire' => '-1',
+        'expire' => -1,
         'author' => 0,
-        'authorize' => 1,
-        'mappings' => array(
-          0 => array(
-            'source' => 'title',
-            'target' => 'title',
-            'unique' => FALSE,
-          ),
-        ),
-        'update_existing' => '0',
-        'input_format' => 'plain_text',
-        'skip_hash_check' => 0,
-        'bundle' => 'news',
+        'authorize' => TRUE,
+        'mappings' => array(),
+        'update_existing' => 0,
+        'input_format' => NULL,
+        'skip_hash_check' => FALSE,
+        'bundle' => NULL,
       ),
     ),
-    'content_type' => 'feed',
+    'content_type' => 'news',
     'update' => 0,
-    'import_period' => '1800',
+    'import_period' => '900',
     'expire_period' => 3600,
     'import_on_create' => 1,
     'process_in_background' => 0,

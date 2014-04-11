@@ -49,7 +49,7 @@ function f_frontpage_image_default_styles() {
         'data' => array(
           'width' => 1980,
           'height' => 500,
-          'anchor' => 'center-top',
+          'anchor' => 'center-center',
         ),
         'weight' => 1,
       ),

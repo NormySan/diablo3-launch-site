@@ -29,8 +29,14 @@ function f_frontpage_context_default_contexts() {
         'views-6208469ffed39ab3e42d08b737416932' => array(
           'module' => 'views',
           'delta' => '6208469ffed39ab3e42d08b737416932',
-          'region' => 'content',
+          'region' => 'header',
           'weight' => '-10',
+        ),
+        'system-main-menu' => array(
+          'module' => 'system',
+          'delta' => 'main-menu',
+          'region' => 'header',
+          'weight' => '-9',
         ),
         'system-main' => array(
           'module' => 'system',
