@@ -9,7 +9,13 @@ Drupal.behaviors.DIABLO = {
 
 // Run once when the DOM is ready (page load)
 $(document).ready(function() {
-
+	$('.owl-carousel').owlCarousel({
+		items: 1,
+		autoPlay: 5000,
+		navigation: true,
+		pagination: false,
+		slideSpeed: 200
+	});
 });
 
 })(jQuery);
