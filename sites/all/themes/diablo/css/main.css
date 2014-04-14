@@ -9,12 +9,20 @@
 /**
  * Import sass files.
  */
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px; }
+
 /**
  * Frontpage slider.
  */
 .frontpage-slider .front-slide-item .field-slide-img img {
   height: auto;
   width: 100%; }
+.frontpage-slider .front-slide-item .meta {
+  color: #ffffff;
+  position: absolute;
+  bottom: 20px; }
 .frontpage-slider .owl-controls {
   position: absolute;
   bottom: 50%; }

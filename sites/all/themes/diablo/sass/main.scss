@@ -6,4 +6,9 @@
 /**
  * Import sass files.
  */
-@import "reset", "variables", "mixins", "sliders";
+@import
+	"reset", 
+	"variables",
+	"mixins",
+	"general",
+	"sliders";

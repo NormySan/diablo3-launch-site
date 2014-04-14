@@ -12,6 +12,7 @@ Drupal.behaviors.diablo = {
       	slideSpeed : 300,
       	paginationSpeed : 400,
       	singleItem:true,
+      	navigationText: ['<i class="fa fa-chevron-left"></i>', '<i class="fa fa-chevron-right"></i>'],
       	theme: 'frontpage-slider'
 	});
   }
