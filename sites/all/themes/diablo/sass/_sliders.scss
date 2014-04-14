@@ -12,55 +12,54 @@
 		}
 
 		.meta {
+			background-color: rgba(0, 0, 0, 0.6);
 			color: #ffffff;
-			margin: 0 auto;
-			max-width: 68em;
-			height: 0;
+			position: absolute;
+			left: 20%;
+			bottom: 10%;
 
-			.title {
+			.title h2 {
 				font-family: Exocet, sans-serif;
-				font-size: 30px;
-				position: absolute;
-				bottom: 20px;
-
+				font-size: 36px;
+				margin: 0;
 				text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.8);
 			}
 
-			.text {
-				position: absolute;
-				bottom: 20px;
+			.body p {
+				font-size: 18px;
+				margin: 0;
 			}
 		}
 	}
 
 	.owl-controls {
-		margin: 0 auto;
-		max-width: 68em;
-		position: relative;
+		position: absolute;
+		margin-top: -19px;
+		top: 50%;
+		width: 100%;
 
 		.owl-buttons {
-			position: absolute;
-			bottom: 50%;
-			width: 100%;
+			bottom: 10%;
+			position: relative;
 
 			.owl-prev,
 			.owl-next {
+				position: relative;
 				background-color: rgba(0, 0, 0, 0.5);
 				border-radius: 4px;
 				color: #ffffff;
 				cursor: hand;
 				padding: 10px 15px;
-				position: relative;
 			}
 
 			.owl-prev {
 				float: left;
-				left: 20px;
+				left: 10%;
 			}
 
 			.owl-next {
 				float: right;
-				right: 20px;
+				right: 10%;
 			}
 		}
 	}
