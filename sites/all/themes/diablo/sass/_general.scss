@@ -1,4 +1,12 @@
 body {
+	background: url("../graphics/background.png") repeat;
+	color: #a99877;
 	font-family: "Source Sans Pro", Arial, sans-serif;
 	font-size: 14px;
+}
+
+img {
+	height: auto;
+	vertical-align: top;
+	width: 100%;
 }

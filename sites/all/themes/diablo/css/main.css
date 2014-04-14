@@ -10,18 +10,28 @@
  * Import sass files.
  */
 body {
+  background: url("../graphics/background.png") repeat;
+  color: #a99877;
   font-family: "Source Sans Pro", Arial, sans-serif;
   font-size: 14px; }
+
+img {
+  height: auto;
+  vertical-align: top;
+  width: 100%; }
 
 #primary-navigation {
   background-color: #1d1e21;
   border-bottom: 1px solid #222327;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
   height: 42px; }
-  #primary-navigation ul li a {
-    display: block;
-    color: #ffffff;
-    line-height: 42px; }
+  #primary-navigation ul {
+    margin: 0;
+    padding: 0; }
+    #primary-navigation ul li a {
+      display: block;
+      color: #ffffff;
+      line-height: 42px; }
 
 .container {
   max-width: 68em;
@@ -55,7 +65,8 @@ body {
  */
 .frontpage-slider .front-slide-item .field-slide-img img {
   height: auto;
-  width: 100%; }
+  width: 100%;
+  vertical-align: top; }
 .frontpage-slider .front-slide-item .meta {
   color: #ffffff;
   position: absolute;
