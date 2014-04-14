@@ -13,24 +13,36 @@
 
 		.meta {
 			color: #ffffff;
-			position: absolute;
-			bottom: 40px;
+			margin: 0 auto;
+			max-width: 68em;
+			height: 0;
 
 			.title {
 				font-family: Exocet, sans-serif;
 				font-size: 30px;
+				position: absolute;
+				bottom: 20px;
 
 				text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.8);
+			}
+
+			.text {
+				position: absolute;
+				bottom: 20px;
 			}
 		}
 	}
 
 	.owl-controls {
-		position: absolute;
-		bottom: 50%;
-		width: 100%;
+		margin: 0 auto;
+		max-width: 68em;
+		position: relative;
 
 		.owl-buttons {
+			position: absolute;
+			bottom: 50%;
+			width: 100%;
+
 			.owl-prev,
 			.owl-next {
 				background-color: rgba(0, 0, 0, 0.5);
