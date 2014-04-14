@@ -13,10 +13,13 @@
 
 		.meta {
 			background-color: rgba(0, 0, 0, 0.6);
+			border-radius: 4px;
 			color: #ffffff;
+			padding: 15px;
 			position: absolute;
-			left: 20%;
-			bottom: 10%;
+			left: 15%;
+			right: 15%;
+			bottom: 20px;
 
 			.title h2 {
 				font-family: Exocet, sans-serif;

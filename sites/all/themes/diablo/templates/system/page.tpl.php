@@ -16,7 +16,15 @@
  * @see template_process()
  */
 ?>
-<?php print render($page['header']); ?>
+<header class="page-header">
+	<section class="header-video">
+		<video xmlns="http://www.w3.org/1999/xhtml" id="malthael-video" class="video-bg is-active" loop="loop" poster="" autoplay>
+			<source src="<?php echo base_path() . drupal_get_path('theme', 'diablo'); ?>/graphics/videos/malthael.webm" type="video/webm" />
+			<source src="<?php echo base_path() . drupal_get_path('theme', 'diablo'); ?>/graphics/videos/malthael.mp4" type="video/mp4" />
+		</video>
+	</section>
+	<?php print render($page['header']); ?>
+</header>
 <?php print render($page['content']); ?>
 <?php print render($page['sidebar_right']); ?>
 <?php print render($page['footer']); ?>

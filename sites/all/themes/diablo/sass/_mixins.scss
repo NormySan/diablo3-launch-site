@@ -1,7 +1,26 @@
+/**
+ * Diablo theme mixins.
+ */
+
+/**
+ * Mixin for images that should be displayed as thumbnails.
+ */
 @mixin thumbnail() {
-	border-radius: 3px;
 	border: 1px solid #524a39;
+	border-radius: 3px;
+
 	&:hover {
 		border-color: #745442;
 	}
+}
+
+/**
+ * Divider.
+ * 
+ * Creates a sweet divider at the bottom of the element as a border
+ * with a shadow to give it those dual horizontal lines.
+ */
+@mixin divider() {
+	border-bottom: 1px solid $divider-top-color;
+	box-shadow: 0 1px 0 $divider-bottom-color;
 }

@@ -1,3 +1,7 @@
+/**
+ * General styles.
+ */
+
 body {
 	background: url("../graphics/background.png") repeat;
 	color: #a99877;
@@ -13,4 +17,70 @@ img {
 
 a {
 	text-decoration: none;
+}
+
+/* -- Page header ---------------------------------------------------------------- */
+
+.page-header {
+	position: relative;
+	height: 400px;
+	overflow: hidden;
+}
+
+.header-video {
+	position: absolute;
+	height: 400px;
+	left: 50%;
+	top: -100px;
+
+	-webkit-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	transform: translateX(-50%);
+}
+
+/* -- Content-type: News --------------------------------------------------------- */
+
+.news-item {
+	margin-bottom: 20px;
+	padding-bottom: 20px;
+
+	@include divider;
+
+	// Teaser
+	&.teaser {
+		@include outer-container;
+
+		.field-news-image {
+			@include span-columns(4);
+
+			img {
+				@include thumbnail;
+			}
+		}
+
+		.title h2 {
+			font-size: 24px;
+			font-weight: 400;
+			margin: 0 0 5px;
+
+			a {
+				color: #f3e6d0;
+			}
+		}
+
+		.post-date {
+			color: #745442;
+			font-size: 16px;
+			font-weight: 400;
+		}
+
+		.content {
+			@include span-columns(8);
+		}
+	}
+
+	// Full content
+	.full-content {
+
+	}
 }
