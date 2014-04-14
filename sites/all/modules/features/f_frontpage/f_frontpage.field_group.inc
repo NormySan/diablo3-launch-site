@@ -21,7 +21,7 @@ function f_frontpage_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Frontslide meta',
-    'weight' => '3',
+    'weight' => '1',
     'children' => array(
       0 => 'body',
       1 => 'title',

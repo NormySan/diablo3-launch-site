@@ -18,7 +18,7 @@ function f_frontpage_ds_field_settings_info() {
   $ds_fieldsetting->view_mode = 'full';
   $ds_fieldsetting->settings = array(
     'title' => array(
-      'weight' => '3',
+      'weight' => '1',
       'label' => 'hidden',
       'format' => 'default',
     ),
@@ -45,15 +45,15 @@ function f_frontpage_ds_layout_settings_info() {
     'regions' => array(
       'ds_content' => array(
         0 => 'field_slide_img',
-        1 => 'title',
-        2 => 'group_frontslide_meta',
+        1 => 'group_frontslide_meta',
+        2 => 'title',
         3 => 'body',
       ),
     ),
     'fields' => array(
       'field_slide_img' => 'ds_content',
-      'title' => 'ds_content',
       'group_frontslide_meta' => 'ds_content',
+      'title' => 'ds_content',
       'body' => 'ds_content',
     ),
     'classes' => array(),

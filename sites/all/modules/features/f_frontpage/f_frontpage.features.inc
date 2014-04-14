@@ -43,7 +43,7 @@ function f_frontpage_image_default_styles() {
     'name' => 'frontpage_slide',
     'label' => 'Frontpage Slide',
     'effects' => array(
-      3 => array(
+      4 => array(
         'label' => 'Crop',
         'help' => 'Cropping will remove portions of an image to make it the specified dimensions.',
         'effect callback' => 'image_crop_effect',
@@ -55,7 +55,7 @@ function f_frontpage_image_default_styles() {
         'data' => array(
           'width' => 1980,
           'height' => 500,
-          'anchor' => 'center-center',
+          'anchor' => 'center-top',
         ),
         'weight' => 1,
       ),
