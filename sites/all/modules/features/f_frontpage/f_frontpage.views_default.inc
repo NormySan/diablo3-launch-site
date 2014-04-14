@@ -85,7 +85,6 @@ function f_frontpage_views_default_views() {
   /* Display: Slider */
   $handler = $view->new_display('block', 'Slider', 'frontpage_slider');
   $handler->display->display_options['defaults']['title'] = FALSE;
-  $handler->display->display_options['title'] = 'Frontpage Slider';
   $handler->display->display_options['display_description'] = 'Slides displayed on the frontpage.';
   $handler->display->display_options['defaults']['pager'] = FALSE;
   $handler->display->display_options['pager']['type'] = 'some';
@@ -115,7 +114,7 @@ function f_frontpage_views_default_views() {
   $handler->display->display_options['filters']['type']['value'] = array(
     'frontpage_slide' => 'frontpage_slide',
   );
-  $handler->display->display_options['block_description'] = 'Frontpage Slider';
+  $handler->display->display_options['block_description'] = 'frontpage_slider';
 
   /* Display: Fanart */
   $handler = $view->new_display('block', 'Fanart', 'frontpage_fanart');
@@ -171,6 +170,7 @@ function f_frontpage_views_default_views() {
     t('List of news displayed on the frontpage.'),
     t('Slider'),
     t('Slides displayed on the frontpage.'),
+    t('frontpage_slider'),
     t('Fanart'),
     t('Displays the latest fanart'),
   );

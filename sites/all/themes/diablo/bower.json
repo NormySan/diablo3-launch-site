@@ -2,7 +2,8 @@
   "name": "diablo",
   "version": "0.0.0",
   "authors": [
-    "Christoffer Palm <christoffer.palm@oddhill.se>"
+    "Christoffer Palm <christoffer.palm@oddhill.se>",
+    "Johan Falk <johan.falk@oddhill.se>"
   ],
   "description": "Diablo theme for drupal 7.x.",
   "keywords": [
