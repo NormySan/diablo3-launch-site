@@ -20,18 +20,38 @@ img {
   vertical-align: top;
   width: 100%; }
 
+a {
+  text-decoration: none; }
+
 #primary-navigation {
   background-color: #1d1e21;
   border-bottom: 1px solid #222327;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
-  height: 42px; }
+  height: 68px; }
   #primary-navigation ul {
-    margin: 0;
-    padding: 0; }
-    #primary-navigation ul li a {
-      display: block;
-      color: #ffffff;
-      line-height: 42px; }
+    max-width: 68em;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+    list-style: none; }
+    #primary-navigation ul:after {
+      content: "";
+      display: table;
+      clear: both; }
+    #primary-navigation ul li {
+      margin-right: 40px;
+      display: inline-block; }
+      #primary-navigation ul li a {
+        color: #b6b9be;
+        display: block;
+        font-size: 22px;
+        font-weight: 600;
+        line-height: 68px;
+        text-transform: uppercase; }
+        #primary-navigation ul li a:hover {
+          color: #ffffff; }
+        #primary-navigation ul li a.active {
+          color: #ffffff; }
 
 .container {
   max-width: 68em;
@@ -58,7 +78,12 @@ img {
       margin-right: 0; }
 
 .sidebar-right {
-  @inclue span-columns(4); }
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 31.76157%; }
+  .sidebar-right:last-child {
+    margin-right: 0; }
 
 /**
  * Frontpage slider.
@@ -103,3 +128,44 @@ img {
     .frontpage-slider .owl-controls .owl-buttons .owl-next {
       float: right;
       right: 20px; }
+
+.page-media section {
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto; }
+  .page-media section:after {
+    content: "";
+    display: table;
+    clear: both; }
+  .page-media section > h2 {
+    border-bottom: 1px solid #27272d;
+    box-shadow: 0 1px 0 #38383d;
+    font-family: Exocet;
+    font-size: 28px; }
+.page-media .screenshot-item,
+.page-media .fanart-item {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 23.23176%; }
+  .page-media .screenshot-item:last-child,
+  .page-media .fanart-item:last-child {
+    margin-right: 0; }
+  .page-media .screenshot-item h2,
+  .page-media .fanart-item h2 {
+    color: #f3e6d0;
+    font-size: 24px;
+    font-weight: 500;
+    margin: 8px 0 0; }
+  .page-media .screenshot-item img,
+  .page-media .fanart-item img {
+    border-radius: 3px;
+    border: 1px solid #524a39; }
+    .page-media .screenshot-item img:hover,
+    .page-media .fanart-item img:hover {
+      border-color: #745442; }
+  .page-media .screenshot-item .post-date,
+  .page-media .fanart-item .post-date {
+    color: #745442; }

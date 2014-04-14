@@ -11,7 +11,7 @@
  * Have a look at the example_layout folder in the DS folder for guidance.
  */
 ?>
-<div class="media-screenshot-item">
+<div class="screenshot-item teaser">
   <?php if (isset($title_suffix['contextual_links'])): ?>
     <?php print render($title_suffix['contextual_links']); ?>
   <?php endif; ?>
