@@ -11,10 +11,10 @@
  * Have a look at the example_layout folder in the DS folder for guidance.
  */
 ?>
-<li class="front-slide-item">
+<div class="front-slide-item">
   <?php if (isset($title_suffix['contextual_links'])): ?>
     <?php print render($title_suffix['contextual_links']); ?>
   <?php endif; ?>
 
   <?php print $ds_content; ?>
-</li>
+</div>
