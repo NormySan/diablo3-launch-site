@@ -16,10 +16,7 @@ module.exports = function(grunt) {
 					ext: '.css'
 				}],
 				options: {
-	        loadPath: [
-	        	require('node-bourbon').includePaths,
-	        	require('node-neat').includePaths
-	        ]
+	        loadPath: require('node-neat').includePaths
 	      }
 			}
 		},

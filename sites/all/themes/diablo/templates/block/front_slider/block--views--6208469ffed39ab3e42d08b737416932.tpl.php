@@ -1,3 +1,3 @@
-<ul id="front-slider" class="owl-carousel">
+<div id="frontpage-slider" class="owl-carousel">
   <?php print $content ?>
-</ul>
+</div>
