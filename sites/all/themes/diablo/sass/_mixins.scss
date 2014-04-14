@@ -1,0 +1,7 @@
+@mixin thumbnail() {
+	border-radius: 3px;
+	border: 1px solid #524a39;
+	&:hover {
+		border-color: #745442;
+	}
+}
