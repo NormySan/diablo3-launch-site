@@ -1,1 +1,3 @@
-<?php print($content); ?>
+<div id="primary-navigation">
+	<?php print($content); ?>
+</div>

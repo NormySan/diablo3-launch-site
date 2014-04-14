@@ -1,0 +1,15 @@
+.container {
+	@include outer-container();
+}
+
+.main-content {
+	@include span-columns(8);
+
+	&.full {
+		@include span-columns(12);
+	}
+}
+
+.sidebar-right {
+	@inclue span-columns(4);
+}

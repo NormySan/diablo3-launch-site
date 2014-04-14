@@ -27,8 +27,16 @@ function diablo_html_head_alter(&$head_elements) {
 /**
  * Implements hook_preprocess_html().
  */
-function oddbaby_preprocess_html(&$variables) {
+function diablo_preprocess_html(&$variables) {
+
+  // Add source sans pro font.
   drupal_add_css('http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700', array('type' => 'external'));
+
+  // Add fontawesome fonts.
+  drupal_add_css(drupal_get_path('theme', 'diablo') . '/bower_components/fontawesome/css/font-awesome.css');
+
+  // Add exorcet font.
+  drupal_add_css(drupal_get_path('theme', 'diablo') . '/fonts/exorcet/exorcet.css');
 }
 
 /**
