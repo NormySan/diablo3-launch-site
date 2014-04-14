@@ -18,7 +18,6 @@
     "tests"
   ],
   "devDependencies": {
-    "bourbon": "*",
-    "neat": "*"
+    "fontawesome": "4.0.3"
   }
 }
