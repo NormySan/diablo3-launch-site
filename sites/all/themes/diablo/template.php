@@ -27,7 +27,7 @@ function diablo_html_head_alter(&$head_elements) {
 /**
  * Implements hook_preprocess_html().
  */
-function oddbaby_preprocess_html(&$variables) {
+function diablo_preprocess_html(&$variables) {
   drupal_add_css('http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700', array('type' => 'external'));
 }
 
