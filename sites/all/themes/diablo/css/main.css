@@ -94,30 +94,40 @@ a {
   vertical-align: top; }
 .frontpage-slider .front-slide-item .meta {
   color: #ffffff;
-  position: absolute;
-  bottom: 40px; }
+  margin: 0 auto;
+  max-width: 68em;
+  height: 0; }
   .frontpage-slider .front-slide-item .meta .title {
     font-family: Exocet, sans-serif;
     font-size: 30px;
+    position: absolute;
+    bottom: 20px;
     text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.8); }
+  .frontpage-slider .front-slide-item .meta .text {
+    position: absolute;
+    bottom: 20px; }
 .frontpage-slider .owl-controls {
-  position: absolute;
-  bottom: 50%;
-  width: 100%; }
-  .frontpage-slider .owl-controls .owl-buttons .owl-prev,
-  .frontpage-slider .owl-controls .owl-buttons .owl-next {
-    background-color: rgba(0, 0, 0, 0.5);
-    border-radius: 4px;
-    color: #ffffff;
-    cursor: hand;
-    padding: 10px 15px;
-    position: relative; }
-  .frontpage-slider .owl-controls .owl-buttons .owl-prev {
-    float: left;
-    left: 20px; }
-  .frontpage-slider .owl-controls .owl-buttons .owl-next {
-    float: right;
-    right: 20px; }
+  margin: 0 auto;
+  max-width: 68em;
+  position: relative; }
+  .frontpage-slider .owl-controls .owl-buttons {
+    position: absolute;
+    bottom: 50%;
+    width: 100%; }
+    .frontpage-slider .owl-controls .owl-buttons .owl-prev,
+    .frontpage-slider .owl-controls .owl-buttons .owl-next {
+      background-color: rgba(0, 0, 0, 0.5);
+      border-radius: 4px;
+      color: #ffffff;
+      cursor: hand;
+      padding: 10px 15px;
+      position: relative; }
+    .frontpage-slider .owl-controls .owl-buttons .owl-prev {
+      float: left;
+      left: 20px; }
+    .frontpage-slider .owl-controls .owl-buttons .owl-next {
+      float: right;
+      right: 20px; }
 
 .page-media section {
   padding-bottom: 20px;
