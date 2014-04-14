@@ -9,3 +9,12 @@
 /**
  * Import sass files.
  */
+/**
+ * Frontpage slider.
+ */
+.frontpage-slider .front-slide-item .field-slide-img img {
+  height: auto;
+  width: 100%; }
+.frontpage-slider .owl-controls {
+  position: absolute;
+  bottom: 50%; }

@@ -1,0 +1,21 @@
+/**
+ * Frontpage slider.
+ */
+.frontpage-slider {
+
+	.front-slide-item {
+		.title {
+
+		}
+
+		.field-slide-img img {
+			height: auto;
+			width: 100%;
+		}
+	}
+
+	.owl-controls {
+		position: absolute;
+		bottom: 50%;
+	}
+}

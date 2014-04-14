@@ -11,7 +11,8 @@ Drupal.behaviors.diablo = {
 		navigation : true,
       	slideSpeed : 300,
       	paginationSpeed : 400,
-      	singleItem:true
+      	singleItem:true,
+      	theme: 'frontpage-slider'
 	});
   }
 }
