@@ -1,21 +1,19 @@
 (function($) {
 
 // Run whenever the DOM tree is changed, e.g. through AJAX/AHAH
-Drupal.behaviors.DIABLO = {
+Drupal.behaviors.diablo = {
   attach: function (context, settings) {
 
+  	/**
+  	 * Initialize the frontpage slider.
+  	 */
+  	$('#frontpage-slider').owlCarousel({
+		navigation : true,
+      	slideSpeed : 300,
+      	paginationSpeed : 400,
+      	singleItem:true
+	});
   }
 }
-
-// Run once when the DOM is ready (page load)
-$(document).ready(function() {
-	$('.owl-carousel').owlCarousel({
-		items: 1,
-		autoPlay: 5000,
-		navigation: true,
-		pagination: false,
-		slideSpeed: 200
-	});
-});
 
 })(jQuery);

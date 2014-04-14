@@ -3,14 +3,13 @@ core = 7.x
 
 ; Stylesheets.
 stylesheets[screen][] = assets/owl-carousel/owl.carousel.css
-stylesheets[screen][] = assets/owl-carousel/owl.theme.css
 stylesheets[screen][] = css/reset.css
 stylesheets[print][] = css/print.css
 stylesheets[screen][] = css/main.css
 
 ; Javascripts.
-scripts[] = js/main.js
 scripts[] = assets/owl-carousel/owl.carousel.js
+scripts[] = js/main.js
 
 ; Regions.
 regions[header] = Header
