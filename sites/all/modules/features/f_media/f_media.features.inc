@@ -38,7 +38,7 @@ function f_media_image_default_styles() {
         'name' => 'image_scale_and_crop',
         'data' => array(
           'width' => 500,
-          'height' => 500,
+          'height' => 400,
         ),
         'weight' => 1,
       ),
