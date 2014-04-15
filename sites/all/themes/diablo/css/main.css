@@ -36,7 +36,10 @@ img {
   width: 100%; }
 
 a {
+  color: #af4f19;
   text-decoration: none; }
+  a:hover {
+    color: #da5b13; }
 
 /* -- Page header ---------------------------------------------------------------- */
 .page-header {
@@ -53,6 +56,29 @@ a {
   -ms-transform: translateX(-50%);
   transform: translateX(-50%); }
 
+/* -- Pager / Pagination --------------------------------------------------------- */
+.pager {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center; }
+  .pager li {
+    background-color: #25262a;
+    border-radius: 3px;
+    display: inline-block;
+    margin-right: 4px; }
+    .pager li a {
+      color: #f3e6d0;
+      display: block;
+      padding: 5px 12px; }
+      .pager li a:hover {
+        color: white; }
+    .pager li.pager-current {
+      color: white;
+      background-color: #25262a;
+      border-radius: 3px;
+      padding: 5px 12px; }
+
 /* -- Content-type: News --------------------------------------------------------- */
 .news-item {
   margin-bottom: 20px;
@@ -60,7 +86,7 @@ a {
   border-bottom: 1px solid #131316;
   box-shadow: 0 1px 0 #2a2a2e; }
   .news-item.teaser {
-    max-width: 68em;
+    max-width: 75em;
     margin-left: auto;
     margin-right: auto; }
     .news-item.teaser:after {
@@ -76,7 +102,10 @@ a {
         margin-right: 0; }
       .news-item.teaser .field-news-image img {
         border: 1px solid #524a39;
-        border-radius: 3px; }
+        border-radius: 3px;
+        -webkit-transition: border-color 0.2s linear;
+        -moz-transition: border-color 0.2s linear;
+        transition: border-color 0.2s linear; }
         .news-item.teaser .field-news-image img:hover {
           border-color: #745442; }
     .news-item.teaser .title h2 {
@@ -85,6 +114,8 @@ a {
       margin: 0 0 5px; }
       .news-item.teaser .title h2 a {
         color: #f3e6d0; }
+        .news-item.teaser .title h2 a:hover {
+          color: #ffffff; }
     .news-item.teaser .post-date {
       color: #745442;
       font-size: 16px;
@@ -97,40 +128,11 @@ a {
       .news-item.teaser .content:last-child {
         margin-right: 0; }
 
-#primary-navigation {
-  background-color: #17181a;
-  border-bottom: 1px solid #222327;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
-  height: 68px;
-  margin-bottom: 30px; }
-  #primary-navigation ul {
-    max-width: 68em;
-    margin-left: auto;
-    margin-right: auto;
-    margin: 0 auto;
-    padding: 0;
-    list-style: none; }
-    #primary-navigation ul:after {
-      content: "";
-      display: table;
-      clear: both; }
-    #primary-navigation ul li {
-      margin-right: 40px;
-      display: inline-block; }
-      #primary-navigation ul li a {
-        color: #b6b9be;
-        display: block;
-        font-size: 22px;
-        font-weight: 600;
-        line-height: 68px;
-        text-transform: uppercase; }
-        #primary-navigation ul li a:hover {
-          color: #ffffff; }
-        #primary-navigation ul li a.active {
-          color: #ffffff; }
-
+/**
+ * Theme layout styles.
+ */
 .container {
-  max-width: 68em;
+  max-width: 75em;
   margin-left: auto;
   margin-right: auto; }
   .container:after {
@@ -154,13 +156,58 @@ a {
       margin-right: 0; }
 
 .sidebar-right {
-  background-color: #25262a;
   float: left;
   display: block;
   margin-right: 2.35765%;
   width: 31.76157%; }
   .sidebar-right:last-child {
     margin-right: 0; }
+  .sidebar-right section {
+    background-color: #25262a;
+    border-radius: 4px;
+    padding: 15px; }
+    .sidebar-right section h2 {
+      margin: 0; }
+    .sidebar-right section.fanart .field-media-fanart {
+      border: 1px solid #524a39;
+      border-radius: 3px;
+      -webkit-transition: border-color 0.2s linear;
+      -moz-transition: border-color 0.2s linear;
+      transition: border-color 0.2s linear; }
+      .sidebar-right section.fanart .field-media-fanart:hover {
+        border-color: #745442; }
+
+#primary-navigation {
+  background-color: #17181a;
+  border-bottom: 1px solid #222327;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+  height: 68px;
+  margin-bottom: 30px; }
+  #primary-navigation ul {
+    max-width: 75em;
+    margin-left: auto;
+    margin-right: auto;
+    margin: 0 auto;
+    padding: 0;
+    list-style: none; }
+    #primary-navigation ul:after {
+      content: "";
+      display: table;
+      clear: both; }
+    #primary-navigation ul li {
+      margin-right: 40px;
+      display: inline-block; }
+      #primary-navigation ul li a {
+        color: #b6b9be;
+        display: block;
+        font-size: 22px;
+        font-weight: 600;
+        line-height: 68px;
+        text-transform: uppercase; }
+        #primary-navigation ul li a:hover {
+          color: #ffffff; }
+        #primary-navigation ul li a.active {
+          color: #ffffff; }
 
 /**
  * Frontpage slider.
@@ -212,7 +259,7 @@ a {
 .page-media section {
   padding-bottom: 20px;
   margin-bottom: 20px;
-  max-width: 68em;
+  max-width: 75em;
   margin-left: auto;
   margin-right: auto; }
   .page-media section:after {
@@ -242,7 +289,10 @@ a {
   .page-media .screenshot-item img,
   .page-media .fanart-item img {
     border: 1px solid #524a39;
-    border-radius: 3px; }
+    border-radius: 3px;
+    -webkit-transition: border-color 0.2s linear;
+    -moz-transition: border-color 0.2s linear;
+    transition: border-color 0.2s linear; }
     .page-media .screenshot-item img:hover,
     .page-media .fanart-item img:hover {
       border-color: #745442; }

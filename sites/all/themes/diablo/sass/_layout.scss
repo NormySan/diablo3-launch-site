@@ -1,0 +1,38 @@
+/**
+ * Theme layout styles.
+ */
+
+.container {
+	@include outer-container();
+}
+
+.main-content {
+	@include span-columns(8);
+
+	&.full {
+		@include span-columns(12);
+	}
+}
+
+.sidebar-right {
+	@include span-columns(4);
+
+	section {
+		background-color: #25262a;
+		border-radius: 4px;
+		padding: 15px;
+
+		h2 {
+			margin: 0;
+		}
+
+		// Fanart block.
+
+		&.fanart {
+			.field-media-fanart {
+				@include thumbnail;
+			}
+		}
+	}
+}
+

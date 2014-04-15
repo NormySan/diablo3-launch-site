@@ -16,7 +16,12 @@ img {
 }
 
 a {
+	color: $primary-link-color;
 	text-decoration: none;
+
+	&:hover {
+		color: $primary-link-hover-color;
+	}
 }
 
 /* -- Page header ---------------------------------------------------------------- */
@@ -36,6 +41,39 @@ a {
 	-webkit-transform: translateX(-50%);
 	-ms-transform: translateX(-50%);
 	transform: translateX(-50%);
+}
+
+/* -- Pager / Pagination --------------------------------------------------------- */
+
+.pager {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+
+	li {
+		background-color: #25262a;
+		border-radius: $default-border-radius;
+		display: inline-block;
+		margin-right: 4px;
+
+		a {
+			color: $secondary-link-color;
+			display: block;
+			padding: 5px 12px;
+
+			&:hover {
+				color: $secondary-link-hover-color;
+			}
+		}
+
+		&.pager-current {
+			color: $secondary-link-hover-color;
+			background-color: #25262a;
+			border-radius: $default-border-radius;
+			padding: 5px 12px;
+		}
+	}	
 }
 
 /* -- Content-type: News --------------------------------------------------------- */
@@ -65,6 +103,10 @@ a {
 
 			a {
 				color: #f3e6d0;
+
+				&:hover {
+					color: #ffffff;
+				}
 			}
 		}
 

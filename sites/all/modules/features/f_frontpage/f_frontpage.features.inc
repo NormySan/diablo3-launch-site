@@ -65,9 +65,9 @@ function f_frontpage_image_default_styles() {
   // Exported image style: news_item.
   $styles['news_item'] = array(
     'name' => 'news_item',
-    'label' => 'News Item (500x400)',
+    'label' => 'News Item (600x400)',
     'effects' => array(
-      1 => array(
+      5 => array(
         'label' => 'Scale and crop',
         'help' => 'Scale and crop will maintain the aspect-ratio of the original image, then crop the larger dimension. This is most useful for creating perfectly square thumbnails without stretching the image.',
         'effect callback' => 'image_scale_and_crop_effect',
@@ -77,7 +77,7 @@ function f_frontpage_image_default_styles() {
         'module' => 'image',
         'name' => 'image_scale_and_crop',
         'data' => array(
-          'width' => 500,
+          'width' => 600,
           'height' => 400,
         ),
         'weight' => 1,
