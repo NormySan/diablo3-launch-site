@@ -1,22 +1,22 @@
 <?php
 /**
  * @file
- * f_frontpage.features.field_base.inc
+ * f_news.features.field_base.inc
  */
 
 /**
  * Implements hook_field_default_field_bases().
  */
-function f_frontpage_field_default_field_bases() {
+function f_news_field_default_field_bases() {
   $field_bases = array();
 
-  // Exported field_base: 'field_slide_img'
-  $field_bases['field_slide_img'] = array(
+  // Exported field_base: 'field_news_image'
+  $field_bases['field_news_image'] = array(
     'active' => 1,
     'cardinality' => 1,
     'deleted' => 0,
     'entity_types' => array(),
-    'field_name' => 'field_slide_img',
+    'field_name' => 'field_news_image',
     'foreign keys' => array(
       'fid' => array(
         'columns' => array(

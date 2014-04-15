@@ -1,5 +1,7 @@
 <?php
 /**
  * @file
- * Drupal needs this blank file.
+ * Code for the f_core feature.
  */
+
+include_once 'f_core.features.inc';
