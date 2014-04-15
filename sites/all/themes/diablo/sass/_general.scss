@@ -5,8 +5,8 @@
 body {
 	background: url("../graphics/background.png") repeat;
 	color: #a99877;
-	font-family: "Source Sans Pro", Arial, sans-serif;
-	font-size: 14px;
+	font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: $base-font-size;
 }
 
 img {
@@ -16,15 +16,24 @@ img {
 }
 
 a {
-	color: $primary-link-color;
 	text-decoration: none;
 
-	&:hover {
-		color: $primary-link-hover-color;
-	}
+	@include primary-link;
 }
 
 /* -- Page header ---------------------------------------------------------------- */
+
+.page-logo {
+	@include outer-container;
+
+	img {
+		position: absolute;
+		top: 200px;
+		margin-top: -128px;
+		width: 300px;
+		z-index: 2;
+	}
+}
 
 .page-header {
 	position: relative;
@@ -97,9 +106,9 @@ a {
 		}
 
 		.title h2 {
-			font-size: 24px;
+			font-size: 22px;
 			font-weight: 400;
-			margin: 0 0 5px;
+			margin: 0;
 
 			a {
 				color: #f3e6d0;

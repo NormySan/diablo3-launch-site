@@ -26,3 +26,27 @@
 	border-bottom: 1px solid $divider-top-color;
 	box-shadow: 0 1px 0 $divider-bottom-color;
 }
+
+/**
+ * Links.
+ *
+ * Helps with styling of various links across the theme.
+ */
+
+// Primary links.
+@mixin primary-link() {
+	color: $primary-link-color;
+
+	&:hover {
+		color: $primary-link-hover-color;
+	}
+}
+
+// Secondary links.
+@mixin secondary-link() {
+	color: $secondary-link-color;
+
+	&:hover {
+		color: $secondary-link-hover-color;
+	}
+}
