@@ -100,53 +100,89 @@ a {
       padding: 5px 12px; }
 
 /* -- Content-type: News --------------------------------------------------------- */
-.news-item {
+.front .news-item {
   margin-bottom: 20px;
   padding-bottom: 20px;
   border-bottom: 1px solid #131316;
   box-shadow: 0 1px 0 #2a2a2e; }
-  .news-item.teaser {
-    max-width: 75em;
-    margin-left: auto;
-    margin-right: auto; }
-    .news-item.teaser:after {
-      content: "";
-      display: table;
-      clear: both; }
-    .news-item.teaser .field-news-image {
-      float: left;
-      display: block;
-      margin-right: 2.35765%;
-      width: 31.76157%; }
-      .news-item.teaser .field-news-image:last-child {
-        margin-right: 0; }
-      .news-item.teaser .field-news-image img {
-        border: 1px solid #524a39;
-        border-radius: 3px;
-        -webkit-transition: border-color 0.2s linear;
-        -moz-transition: border-color 0.2s linear;
-        transition: border-color 0.2s linear; }
-        .news-item.teaser .field-news-image img:hover {
-          border-color: #745442; }
-    .news-item.teaser .title h2 {
-      font-size: 22px;
-      font-weight: 400;
-      margin: 0; }
-      .news-item.teaser .title h2 a {
-        color: #f3e6d0; }
-        .news-item.teaser .title h2 a:hover {
-          color: #ffffff; }
-    .news-item.teaser .post-date {
-      color: #745442;
-      font-size: 16px;
-      font-weight: 400; }
-    .news-item.teaser .content {
-      float: left;
-      display: block;
-      margin-right: 2.35765%;
-      width: 65.88078%; }
-      .news-item.teaser .content:last-child {
-        margin-right: 0; }
+
+.news-item.mini-teaser {
+  border-bottom: 1px solid #3b3632;
+  padding: 10px 5px; }
+  .news-item.mini-teaser:after {
+    content: "";
+    display: table;
+    clear: both; }
+  .news-item.mini-teaser:hover {
+    background-color: #212225; }
+  .news-item.mini-teaser .title,
+  .news-item.mini-teaser .post-date {
+    margin-left: 110px; }
+  .news-item.mini-teaser .title h2 {
+    font-size: 15px;
+    font-weight: 300;
+    margin: 0; }
+  .news-item.mini-teaser .title a {
+    color: #f3e6d0; }
+    .news-item.mini-teaser .title a:hover {
+      color: white; }
+  .news-item.mini-teaser .field-news-image {
+    float: left;
+    width: 100px; }
+    .news-item.mini-teaser .field-news-image img {
+      border: 1px solid #524a39;
+      border-radius: 3px;
+      -webkit-transition: border-color 0.2s linear;
+      -moz-transition: border-color 0.2s linear;
+      transition: border-color 0.2s linear; }
+      .news-item.mini-teaser .field-news-image img:hover {
+        border-color: #745442; }
+  .news-item.mini-teaser .post-date {
+    color: #745442;
+    font-size: 16px;
+    font-weight: 400; }
+.news-item.teaser {
+  max-width: 75em;
+  margin-left: auto;
+  margin-right: auto; }
+  .news-item.teaser:after {
+    content: "";
+    display: table;
+    clear: both; }
+  .news-item.teaser .field-news-image {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 31.76157%; }
+    .news-item.teaser .field-news-image:last-child {
+      margin-right: 0; }
+    .news-item.teaser .field-news-image img {
+      border: 1px solid #524a39;
+      border-radius: 3px;
+      -webkit-transition: border-color 0.2s linear;
+      -moz-transition: border-color 0.2s linear;
+      transition: border-color 0.2s linear; }
+      .news-item.teaser .field-news-image img:hover {
+        border-color: #745442; }
+  .news-item.teaser .title h2 {
+    font-size: 22px;
+    font-weight: 400;
+    margin: 0; }
+    .news-item.teaser .title h2 a {
+      color: #f3e6d0; }
+      .news-item.teaser .title h2 a:hover {
+        color: #ffffff; }
+  .news-item.teaser .post-date {
+    color: #745442;
+    font-size: 16px;
+    font-weight: 400; }
+  .news-item.teaser .content {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 65.88078%; }
+    .news-item.teaser .content:last-child {
+      margin-right: 0; }
 
 /**
  * Theme layout styles.
@@ -187,11 +223,11 @@ a {
     border-radius: 4px;
     padding: 15px; }
     .sidebar-right section > h2 {
-      border-bottom: 1px solid #3b3632;
+      border-bottom: 2px solid #3b3632;
       color: #f3e6d0;
       font-family: Exocet, sans-serif;
       font-size: 22px;
-      margin: 0 0 10px;
+      margin: 0;
       padding: 0 0 5px; }
     .sidebar-right section .title h2 {
       color: #f3e6d0;

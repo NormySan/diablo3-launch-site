@@ -87,13 +87,67 @@ a {
 
 /* -- Content-type: News --------------------------------------------------------- */
 
-.news-item {
-	margin-bottom: 20px;
-	padding-bottom: 20px;
 
-	@include divider;
+// Frontpage news.
+.front {
+	.news-item {
+		margin-bottom: 20px;
+		padding-bottom: 20px;
+
+		@include divider;
+	}
+}
+
+.news-item {
+
+	// Mini teaser
+
+	&.mini-teaser {
+		border-bottom: 1px solid #3b3632;
+		padding: 10px 5px;
+
+		@include clearfix;
+
+		&:hover {
+			background-color: #212225;
+		}
+
+		.title,
+		.post-date {
+			margin-left: 110px;
+		}
+
+		.title {
+
+			h2 {
+				font-size: 15px;
+				font-weight: 300;
+				margin: 0;
+			}
+
+			a {
+				@include secondary-link;
+			}
+		}
+
+		.field-news-image {
+			float: left;
+			width: 100px;
+
+			img {
+				@include thumbnail;
+			}
+		}
+
+		.post-date {
+			color: #745442;
+			font-size: 16px;
+			font-weight: 400;
+		}
+	}
 
 	// Teaser
+
 	&.teaser {
 		@include outer-container;
 

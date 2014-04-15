@@ -21,7 +21,7 @@
 	<div class="main-content">
 		<?php print render($page['content']); ?>
 	</div>
-	<div class="sidebar-right">
+	<div class="sidebar sidebar-right">
 		<?php print render($page['sidebar_right']); ?>
 	</div>
 </div>
