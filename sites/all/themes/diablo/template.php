@@ -36,7 +36,7 @@ function diablo_preprocess_html(&$variables) {
   drupal_add_css(drupal_get_path('theme', 'diablo') . '/bower_components/fontawesome/css/font-awesome.css');
 
   // Add exorcet font.
-  drupal_add_css(drupal_get_path('theme', 'diablo') . '/fonts/exorcet/exorcet.css');
+  drupal_add_css(drupal_get_path('theme', 'diablo') . '/fonts/exocet/exocet.css');
 }
 
 /**
