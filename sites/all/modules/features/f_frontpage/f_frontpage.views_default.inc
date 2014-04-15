@@ -119,7 +119,7 @@ function f_frontpage_views_default_views() {
   /* Display: Fanart */
   $handler = $view->new_display('block', 'Fanart', 'frontpage_fanart');
   $handler->display->display_options['defaults']['title'] = FALSE;
-  $handler->display->display_options['title'] = 'Fanart';
+  $handler->display->display_options['title'] = 'Latest fanart';
   $handler->display->display_options['display_description'] = 'Displays the latest fanart';
   $handler->display->display_options['defaults']['pager'] = FALSE;
   $handler->display->display_options['pager']['type'] = 'some';
@@ -177,6 +177,7 @@ function f_frontpage_views_default_views() {
     t('Slides displayed on the frontpage.'),
     t('frontpage_slider'),
     t('Fanart'),
+    t('Latest fanart'),
     t('Displays the latest fanart'),
   );
   $export['custom_frontpage'] = $view;
