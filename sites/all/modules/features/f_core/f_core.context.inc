@@ -13,8 +13,8 @@ function f_core_context_default_contexts() {
   $context = new stdClass();
   $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
   $context->api_version = 3;
-  $context->name = 'main_menu';
-  $context->description = 'Show navigation menu on all pages.';
+  $context->name = 'global';
+  $context->description = 'global context';
   $context->tag = 'Core';
   $context->conditions = array(
     'path' => array(
@@ -40,8 +40,8 @@ function f_core_context_default_contexts() {
   // Translatables
   // Included for use with string extractors like potx.
   t('Core');
-  t('Show navigation menu on all pages.');
-  $export['main_menu'] = $context;
+  t('global context');
+  $export['global'] = $context;
 
   return $export;
 }
