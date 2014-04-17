@@ -53,6 +53,9 @@ a {
   a:hover {
     color: #da5b13; }
 
+ul {
+  list-style-type: none; }
+
 /* -- Page header ---------------------------------------------------------------- */
 .page-logo {
   max-width: 75em;
@@ -330,46 +333,38 @@ a {
       float: right;
       right: 10%; }
 
-.page-media section {
-  padding-bottom: 20px;
-  margin-bottom: 20px;
+.page-media .main-content > h2 {
+  border-bottom: 1px solid #131316;
+  box-shadow: 0 1px 0 #2a2a2e; }
+.page-media .main-content .media {
   max-width: 75em;
   margin-left: auto;
-  margin-right: auto; }
-  .page-media section:after {
+  margin-right: auto;
+  padding: 0; }
+  .page-media .main-content .media:after {
     content: "";
     display: table;
     clear: both; }
-  .page-media section > h2 {
-    font-family: Exocet;
-    font-size: 28px;
-    border-bottom: 1px solid #131316;
-    box-shadow: 0 1px 0 #2a2a2e; }
-.page-media .screenshot-item,
-.page-media .fanart-item {
-  float: left;
-  display: block;
-  margin-right: 2.35765%;
-  width: 23.23176%; }
-  .page-media .screenshot-item:last-child,
-  .page-media .fanart-item:last-child {
-    margin-right: 0; }
-  .page-media .screenshot-item h2,
-  .page-media .fanart-item h2 {
-    color: #f3e6d0;
-    font-size: 24px;
-    font-weight: 500;
-    margin: 8px 0 0; }
-  .page-media .screenshot-item img,
-  .page-media .fanart-item img {
-    border: 1px solid #524a39;
-    border-radius: 3px;
-    -webkit-transition: border-color 0.2s linear;
-    -moz-transition: border-color 0.2s linear;
-    transition: border-color 0.2s linear; }
-    .page-media .screenshot-item img:hover,
-    .page-media .fanart-item img:hover {
-      border-color: #745442; }
-  .page-media .screenshot-item .post-date,
-  .page-media .fanart-item .post-date {
-    color: #745442; }
+  .page-media .main-content .media .owl-carousel {
+    display: block; }
+  .page-media .main-content .media .teaser {
+    margin-right: 10px; }
+    .page-media .main-content .media .teaser a {
+      text-decoration: none; }
+    .page-media .main-content .media .teaser h2 {
+      font-size: 20px;
+      margin: 5px 0; }
+    .page-media .main-content .media .teaser img {
+      border: 1px solid #524a39;
+      border-radius: 3px;
+      -webkit-transition: border-color 0.2s linear;
+      -moz-transition: border-color 0.2s linear;
+      transition: border-color 0.2s linear; }
+      .page-media .main-content .media .teaser img:hover {
+        border-color: #745442; }
+    .page-media .main-content .media .teaser .post-date {
+      color: #745442;
+      font-size: 16px;
+      font-weight: 400; }
+    .page-media .main-content .media .teaser:hover h2 {
+      color: white; }

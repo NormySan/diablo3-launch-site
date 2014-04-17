@@ -1,35 +1,49 @@
 .page-media {
-	section {
-		padding-bottom: 20px;
-		margin-bottom: 20px;
 
-		@include outer-container;
-
-		> h2 {	
-			font-family: Exocet;
-			font-size: 28px;
-
-			@include divider;
-		}
-	}
-
-	.screenshot-item, 
-	.fanart-item {
-		@include span-columns(3);
+	.main-content {
 		
-		h2 {
-			color: #f3e6d0;
-			font-size: 24px;
-			font-weight: 500;
-			margin: 8px 0 0;
+		>h2 {
+			@include divider;	
 		}
+	
+		.media {
+			@include outer-container;
 
-		img {
-			@include thumbnail();
-		}
+			padding: 0;
+			.owl-carousel {
+				display: block;
+			}
 
-		.post-date {
-			color: #745442;
+			.teaser {
+
+				margin-right: 10px;
+
+				a {
+					text-decoration: none;
+				}
+
+				h2 {
+					font-size: 20px;
+					margin: 5px 0;
+				}
+
+				img {
+					@include thumbnail;
+				}
+
+				.post-date {
+					color: #745442;
+					font-size: 16px;
+					font-weight: 400;
+				}
+
+				&:hover {
+
+					h2 {
+						color: $secondary-link-hover-color;
+					}
+				}
+			}
 		}
-	}
+	}	
 }

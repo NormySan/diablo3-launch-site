@@ -21,6 +21,10 @@ a {
 	@include primary-link;
 }
 
+ul {
+	list-style-type: none;
+}
+
 /* -- Page header ---------------------------------------------------------------- */
 
 .page-logo {
