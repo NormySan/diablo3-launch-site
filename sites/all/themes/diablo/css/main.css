@@ -13,6 +13,13 @@
  * Diablo theme mixins.
  */
 /**
+ * Breakpoints.
+ *
+ * Mobile: Only used for specific cases where it's needed. Mobile should always
+ * be the smalles breakpoint and does not require a media query.
+ * Tablet: 
+ */
+/**
  * Mixin for images that should be displayed as thumbnails.
  */
 /**
