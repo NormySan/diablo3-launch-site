@@ -25,6 +25,14 @@ ul {
 	list-style-type: none;
 }
 
+/* -- Page title ----------------------------------------------------------------- */
+
+.page-title {
+	.title {
+		@include page-title;
+	}
+}
+
 /* -- Page header ---------------------------------------------------------------- */
 
 .page-logo {
@@ -56,11 +64,18 @@ ul {
 	transform: translateX(-50%);
 }
 
+/* -- Page footer ---------------------------------------------------------------- */
+
+.page-footer {
+	background-color: #161515;
+	min-height: 200px;
+}
+
 /* -- Pager / Pagination --------------------------------------------------------- */
 
 .pager {
 	list-style: none;
-	margin: 0;
+	margin: 20px 0;
 	padding: 0;
 	text-align: center;
 
@@ -68,12 +83,17 @@ ul {
 		background-color: #25262a;
 		border-radius: $default-border-radius;
 		display: inline-block;
-		margin-right: 4px;
+		margin-right: 3px;
+
+		@include button-red;
+
+		a, &.pager-current {
+			padding: 5px 12px;
+		}
 
 		a {
 			color: $secondary-link-color;
 			display: block;
-			padding: 5px 12px;
 
 			&:hover {
 				color: $secondary-link-hover-color;
@@ -81,12 +101,9 @@ ul {
 		}
 
 		&.pager-current {
-			color: $secondary-link-hover-color;
-			background-color: #25262a;
-			border-radius: $default-border-radius;
-			padding: 5px 12px;
+			color: #ffffff;
 		}
-	}	
+	}
 }
 
 /* -- Content-type: News --------------------------------------------------------- */
@@ -191,5 +208,160 @@ ul {
 	// Full content
 	.full-content {
 
+	}
+}
+
+/* -- Content-type: Media -------------------------------------------------------- */
+
+.page-media {
+
+	section {
+
+		margin-bottom: 20px;
+
+		@include clearfix;
+
+		> h2 {
+			font-family: Exocet, sans-serif;
+			font-size: 26px;
+			margin: 0 0 15px;
+			padding: 0 0 10px;
+
+			@include divider;
+		}
+	}
+
+	.media {
+		@include clearfix;
+
+		.media-item {
+			margin-bottom: 20px;
+
+			@include media($mobile) {
+				@include span-columns(6);
+				@include omega(2n);
+			}
+
+			@include media($tablet) {
+				@include span-columns(3);
+				@include omega(4n);
+
+			}
+		}
+	}
+
+	.view-more {
+		background-color: #17181a;
+		border-radius: $default-border-radius;
+		display: inline-block;
+		float: right;
+		padding: 5px 10px;
+	}
+}
+
+.media-item {
+
+	&.teaser {
+
+		h2 {
+			font-size: 22px;
+			font-weight: 300;
+			margin: 10px 0 0;
+
+			a {
+				@include secondary-link;
+			}
+		}
+
+		img {
+			@include thumbnail;
+		}
+
+		.post-date {
+			color: #745442;
+		}
+	}
+
+	&.mini-teaser {
+
+	}
+}
+
+.fanart-other,
+.screenshots-other,
+.videos-other {
+	margin: 40px 0;
+
+	@include clearfix;
+
+	h2 {
+		@include page-title;
+	}
+
+	.media-item {
+		@include span-columns(2);
+
+		img {
+			@include thumbnail;
+		}
+
+		.active img {
+			border: 1px solid #8D1C04;
+		}
+	}
+}
+
+/* -- Content-type: Game --------------------------------------------------------- */
+
+section.game {
+	position: relative;
+	max-height: 500px;
+
+	@include clearfix;
+
+	.container {
+		position: absolute;
+
+		.title {
+			color: #ffffff;
+			font-family: Exocet, sans-serif;
+			font-size: 20px;
+			text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.6);
+		}
+	}
+
+	.field-game-image {
+		width: 25%;
+		display: none;
+	}
+
+	.field-game-background {
+		position: absolute;
+		width: 100%;
+		z-index: -1;
+	}
+
+	&:nth-child(odd) {
+		.details {
+			float: right;
+		}
+
+		.field-game-image {
+			float: left;
+		}
+	}
+
+	&:nth-child(even) {
+		.details {
+			float: left;
+		}
+
+		.field-game-image {
+			float: right;
+		}
+	}
+
+	&:first-of-type {
+		margin-top: -40px;
 	}
 }

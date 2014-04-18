@@ -3,12 +3,47 @@
  */
 
 /**
+ * Typography.
+ */
+@mixin page-title() {
+	font-family: Exocet, "Source sans pro", sans-serif;
+	font-size: 26px;
+	margin: 0 0 15px;
+	padding: 0 0 10px;
+
+	@include divider;
+}
+
+/**
  * Breakpoints.
  *
  * Mobile: Only used for specific cases where it's needed. Mobile should always
- * be the smalles breakpoint and does not require a media query.
- * Tablet: 
+ * be the smalles breakpoint and does not normaly require a media query.
+ * Tablet:
  */
+
+$mobile: new-breakpoint(max-width 768px);
+$tablet: new-breakpoint(min-width 768px);
+$desktop: new-breakpoint(min-width 992px);
+
+/**
+ * Buttons.
+ */
+@mixin button-red() {
+	border: 1px solid #07080b;
+	border-radius: $default-border-radius;
+	box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2);
+
+	@include linear-gradient(#8D1C04, #6D0703);
+}
+
+@mixin button-brown() {
+	border: 1px solid #07080b;
+	border-radius: $default-border-radius;
+	box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.08);
+
+	@include linear-gradient(#1e1c1a, #2d2a28);
+}
 
 /**
  * Mixin for images that should be displayed as thumbnails.
@@ -20,13 +55,13 @@
 	@include transition (border-color 0.2s linear);
 
 	&:hover {
-		border-color: #745442;
+		border-color: #8D1C04;
 	}
 }
 
 /**
  * Divider.
- * 
+ *
  * Creates a sweet divider at the bottom of the element as a border
  * with a shadow to give it those dual horizontal lines.
  */

@@ -29,11 +29,12 @@
 </header>
 <?php print render($page['header']); ?>
 <div class="container">
-	<div class="main-content">
+	<div class="main-content full">
 		<?php print render($page['content']); ?>
 	</div>
-	<div class="sidebar sidebar-right">
-		<?php print render($page['sidebar_right']); ?>
-	</div>
 </div>
-<?php print render($page['footer']); ?>
+<footer class="page-footer">
+	<div class="container">
+		<?php print render($page['footer']); ?>
+	</div>
+</footer>
