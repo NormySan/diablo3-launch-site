@@ -462,47 +462,51 @@ section.game {
 /**
  * Frontpage slider.
  */
-.frontpage-slider .front-slide-item .field-slide-img img {
-  height: auto;
-  width: 100%;
-  vertical-align: top; }
-.frontpage-slider .front-slide-item .meta {
-  display: none;
-  background-color: rgba(0, 0, 0, 0.6);
-  border-radius: 4px;
-  color: #ffffff;
-  padding: 15px;
-  position: absolute;
-  left: 15%;
-  right: 15%;
-  bottom: 20px; }
-  .frontpage-slider .front-slide-item .meta .title h2 {
-    font-family: Exocet, sans-serif;
-    font-size: 36px;
-    margin: 0;
-    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.8); }
-  .frontpage-slider .front-slide-item .meta .body p {
-    font-size: 18px;
-    margin: 0; }
-.frontpage-slider .owl-controls {
-  position: absolute;
-  margin-top: -19px;
-  top: 50%;
-  width: 100%; }
-  .frontpage-slider .owl-controls .owl-buttons {
-    bottom: 10%;
-    position: relative; }
-    .frontpage-slider .owl-controls .owl-buttons .owl-prev,
-    .frontpage-slider .owl-controls .owl-buttons .owl-next {
-      position: relative;
-      background-color: rgba(0, 0, 0, 0.5);
-      border-radius: 4px;
-      color: #ffffff;
-      cursor: hand;
-      padding: 10px 15px; }
-    .frontpage-slider .owl-controls .owl-buttons .owl-prev {
-      float: left;
-      left: 10%; }
-    .frontpage-slider .owl-controls .owl-buttons .owl-next {
-      float: right;
-      right: 10%; }
+.frontpage-slider {
+  padding: 0;
+  margin: 0; }
+  .frontpage-slider .front-slide-item .field-slide-img img {
+    height: auto;
+    width: 100%;
+    vertical-align: top; }
+  .frontpage-slider .front-slide-item .meta {
+    display: block;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 4px;
+    color: #ffffff;
+    padding: 15px;
+    position: absolute;
+    left: 15%;
+    right: 15%;
+    bottom: 20px; }
+    .frontpage-slider .front-slide-item .meta .title h2 {
+      font-family: Exocet, sans-serif;
+      font-size: 30px;
+      margin: 0;
+      text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.8);
+      color: #f3e6d0; }
+    .frontpage-slider .front-slide-item .meta .body p {
+      font-size: 18px;
+      margin: 0; }
+  .frontpage-slider .owl-controls {
+    position: absolute;
+    margin-top: -19px;
+    top: 50%;
+    width: 100%; }
+    .frontpage-slider .owl-controls .owl-buttons {
+      bottom: 10%;
+      position: relative; }
+      .frontpage-slider .owl-controls .owl-buttons .owl-prev,
+      .frontpage-slider .owl-controls .owl-buttons .owl-next {
+        position: relative;
+        background-color: rgba(0, 0, 0, 0.5);
+        border-radius: 4px;
+        color: #ffffff;
+        cursor: hand;
+        padding: 10px 15px; }
+      .frontpage-slider .owl-controls .owl-buttons .owl-prev {
+        float: left;
+        left: 10%; }
+      .frontpage-slider .owl-controls .owl-buttons .owl-next {
+        float: right;
+        right: 10%; }

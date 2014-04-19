@@ -7,7 +7,7 @@ Drupal.behaviors.diablo = {
   	/**
   	 * Initialize the frontpage slider.
   	 */
-  	$('#frontpage-slider').owlCarousel({
+  	$('.frontpage-slider').owlCarousel({
   		navigation : true,
     	slideSpeed : 300,
     	pagination: false,

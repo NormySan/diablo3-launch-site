@@ -1,0 +1,9 @@
+  <?php print $header; ?>
+  <?php print $exposed; ?>
+  <?php print $attachment_before; ?>
+  <?php print $rows; ?>
+  <?php print $empty; ?>
+  <?php print $pager; ?>
+  <?php print $attachment_after; ?>
+  <?php print $more; ?>
+  <?php print $footer; ?>
