@@ -7,4 +7,8 @@
 		<?php print render($page['sidebar_right']); ?>
 	</div>
 </div>
-<?php print render($page['footer']); ?>
+<footer class="page-footer">
+  <div class="container">
+    <?php print render($page['footer']); ?>
+  </div>
+</footer>

@@ -29,4 +29,9 @@
 </header>
 <?php print render($page['header']); ?>
 <?php print render($page['content']); ?>
-<?php print render($page['footer']); ?>
+<footer class="page-footer">
+  <div class="container">
+    <?php print render($page['footer']); ?>
+  </div>
+</footer>
+
