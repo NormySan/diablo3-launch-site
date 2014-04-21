@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the f_order_now feature.
+ */
+
+include_once 'f_order_now.features.inc';
