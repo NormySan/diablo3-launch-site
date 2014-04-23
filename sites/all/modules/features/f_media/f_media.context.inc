@@ -94,5 +94,140 @@ function f_media_context_default_contexts() {
   t('Media');
   $export['media_views'] = $context;
 
+  $context = new stdClass();
+  $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
+  $context->api_version = 3;
+  $context->name = 'single_fanart';
+  $context->description = 'When displaying a single fanart node.';
+  $context->tag = 'Media';
+  $context->conditions = array(
+    'path' => array(
+      'values' => array(
+        'media/fanart/*' => 'media/fanart/*',
+      ),
+    ),
+  );
+  $context->reactions = array(
+    'block' => array(
+      'blocks' => array(
+        'blockify-blockify-page-title' => array(
+          'module' => 'blockify',
+          'delta' => 'blockify-page-title',
+          'region' => 'content',
+          'weight' => '-10',
+        ),
+        'system-main' => array(
+          'module' => 'system',
+          'delta' => 'main',
+          'region' => 'content',
+          'weight' => '-9',
+        ),
+        'views-media_fanart-other' => array(
+          'module' => 'views',
+          'delta' => 'media_fanart-other',
+          'region' => 'content',
+          'weight' => '-8',
+        ),
+      ),
+    ),
+  );
+  $context->condition_mode = 0;
+
+  // Translatables
+  // Included for use with string extractors like potx.
+  t('Media');
+  t('When displaying a single fanart node.');
+  $export['single_fanart'] = $context;
+
+  $context = new stdClass();
+  $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
+  $context->api_version = 3;
+  $context->name = 'single_screenshot';
+  $context->description = 'When displaying a single screenshot node.';
+  $context->tag = 'Media';
+  $context->conditions = array(
+    'path' => array(
+      'values' => array(
+        'media/screenshots/*' => 'media/screenshots/*',
+      ),
+    ),
+  );
+  $context->reactions = array(
+    'block' => array(
+      'blocks' => array(
+        'blockify-blockify-page-title' => array(
+          'module' => 'blockify',
+          'delta' => 'blockify-page-title',
+          'region' => 'content',
+          'weight' => '-10',
+        ),
+        'system-main' => array(
+          'module' => 'system',
+          'delta' => 'main',
+          'region' => 'content',
+          'weight' => '-9',
+        ),
+        'views-media_screenshots-other' => array(
+          'module' => 'views',
+          'delta' => 'media_screenshots-other',
+          'region' => 'content',
+          'weight' => '-8',
+        ),
+      ),
+    ),
+  );
+  $context->condition_mode = 0;
+
+  // Translatables
+  // Included for use with string extractors like potx.
+  t('Media');
+  t('When displaying a single screenshot node.');
+  $export['single_screenshot'] = $context;
+
+  $context = new stdClass();
+  $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
+  $context->api_version = 3;
+  $context->name = 'single_video';
+  $context->description = 'When displaying a single video node.';
+  $context->tag = 'Media';
+  $context->conditions = array(
+    'path' => array(
+      'values' => array(
+        'media/videos/*' => 'media/videos/*',
+      ),
+    ),
+  );
+  $context->reactions = array(
+    'block' => array(
+      'blocks' => array(
+        'blockify-blockify-page-title' => array(
+          'module' => 'blockify',
+          'delta' => 'blockify-page-title',
+          'region' => 'content',
+          'weight' => '-10',
+        ),
+        'system-main' => array(
+          'module' => 'system',
+          'delta' => 'main',
+          'region' => 'content',
+          'weight' => '-9',
+        ),
+        'views-media_videos-other' => array(
+          'module' => 'views',
+          'delta' => 'media_videos-other',
+          'region' => 'content',
+          'weight' => '-8',
+        ),
+      ),
+    ),
+  );
+  $context->condition_mode = 0;
+
+  // Translatables
+  // Included for use with string extractors like potx.
+  t('Media');
+  t('When displaying a single video node.');
+  $export['single_video'] = $context;
+
   return $export;
 }

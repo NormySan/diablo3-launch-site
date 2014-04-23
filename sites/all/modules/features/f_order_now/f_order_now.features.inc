@@ -53,7 +53,7 @@ function f_order_now_default_entityform_type() {
       "user_submissions_view" : "default",
       "form_status" : "ENTITYFORM_OPEN",
       "roles" : { "1" : "1", "2" : "2" },
-      "resubmit_action" : "disallow",
+      "resubmit_action" : "new",
       "redirect_path" : "",
       "instruction_pre" : {
         "value" : "\\u003Cp\\u003ENow is the time! PAY US and you forever play the game!\\u003C\\/p\\u003E",

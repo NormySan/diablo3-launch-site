@@ -27,6 +27,19 @@ function f_news_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'default_feeds_importer';
+  $strongarm->value = array(
+    'feed' => FALSE,
+    'node' => FALSE,
+    'user' => FALSE,
+    'opml' => FALSE,
+    'diablo_3_news' => TRUE,
+  );
+  $export['default_feeds_importer'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'diff_enable_revisions_page_node_news';
   $strongarm->value = 1;
   $export['diff_enable_revisions_page_node_news'] = $strongarm;
@@ -44,6 +57,13 @@ function f_news_strongarm() {
   $strongarm->name = 'diff_view_mode_preview_node_news';
   $strongarm->value = 'full';
   $export['diff_view_mode_preview_node_news'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'feeds_reschedule';
+  $strongarm->value = FALSE;
+  $export['feeds_reschedule'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
@@ -174,6 +194,20 @@ function f_news_strongarm() {
   $strongarm->name = 'node_submitted_news_item';
   $strongarm->value = 0;
   $export['node_submitted_news_item'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'pathauto_node_feed_item_pattern';
+  $strongarm->value = '';
+  $export['pathauto_node_feed_item_pattern'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'pathauto_node_feed_pattern';
+  $strongarm->value = '';
+  $export['pathauto_node_feed_pattern'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */

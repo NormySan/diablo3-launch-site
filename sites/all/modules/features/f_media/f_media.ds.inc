@@ -185,14 +185,6 @@ function f_media_ds_layout_settings_info() {
   $ds_layout->view_mode = 'full';
   $ds_layout->layout = 'ds_1col';
   $ds_layout->settings = array(
-    'regions' => array(
-      'ds_content' => array(
-        0 => 'field_media_screenshot',
-      ),
-    ),
-    'fields' => array(
-      'field_media_screenshot' => 'ds_content',
-    ),
     'classes' => array(),
     'wrappers' => array(
       'ds_content' => 'div',

@@ -14,6 +14,9 @@ function f_news_ctools_plugin_api($module = NULL, $api = NULL) {
   if ($module == "ds" && $api == "ds") {
     return array("version" => "1");
   }
+  if ($module == "feeds" && $api == "feeds_importer_default") {
+    return array("version" => "1");
+  }
   if ($module == "field_group" && $api == "field_group") {
     return array("version" => "1");
   }
@@ -66,6 +69,22 @@ function f_news_image_default_styles() {
  */
 function f_news_node_info() {
   $items = array(
+    'feed' => array(
+      'name' => t('Feed'),
+      'base' => 'node_content',
+      'description' => t('Subscribe to RSS or Atom feeds. Creates nodes of the content type "Feed item" from feed content.'),
+      'has_title' => '1',
+      'title_label' => t('Title'),
+      'help' => '',
+    ),
+    'feed_item' => array(
+      'name' => t('Feed item'),
+      'base' => 'node_content',
+      'description' => t('This content type is being used for automatically aggregated content from feeds.'),
+      'has_title' => '1',
+      'title_label' => t('Title'),
+      'help' => '',
+    ),
     'news' => array(
       'name' => t('News'),
       'base' => 'node_content',
