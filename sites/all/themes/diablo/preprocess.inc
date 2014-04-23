@@ -35,3 +35,12 @@ function diablo_preprocess_blockify_logo(&$variables) {
   // Change the url of the logo to the graphics folder.
   $variables['logo_path'] = file_create_url(drupal_get_path('theme', 'diablo') . '/graphics/logo.png');
 }
+
+/**
+ * Implements hook_preprocess_page();
+ */
+function diablo_preprocess_page(&$vars, $hook) {
+  if (isset($vars['node']) && $vars['node']->type === 'news') {
+   $vars['theme_hook_suggestions'][] = 'page__'. str_replace('_', '--', $vars['node']->type);
+  }
+}
